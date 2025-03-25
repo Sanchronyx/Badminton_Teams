@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head><title>Group Results</title></head>
+<body>
+  <h1>Group Assignment Results</h1>
+  {% for group, names in groups.items() %}
+    <h2>{{ group }}</h2>
+    <ul>
+      {% for name in names %}
+        <li>{{ name }}</li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+  <a href="/">Go Back</a>
+</body>
+</html>
